@@ -105,3 +105,8 @@ function calculateSimpleInterest( annualInterest , principalAmount, timeYear){
 // Q12:
 // Write a function named convertMinutesToHours that takes a number of minutes as input and returns
 //  the equivalent time in hours and minutes (e.g., "2 hours and 30 minutes").
+function convertMinutesToHours( minutes){
+  let hours = Math.floor(minutes / 60);
+  return {hours, minutes};
+
+}
