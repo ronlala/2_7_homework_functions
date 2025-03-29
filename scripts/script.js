@@ -51,11 +51,19 @@ console.log(calculateCircleArea);
 // Write a function expression called isLeapYear that determines if a year is a leap year and returns true or false.
 // Found out the calculation is if the year is divisible ny 4 but not by 100 its a leap year , if it is divisible by 400 its a leap year)
 
-function isLeapYear(year){
-    if ( year % 100 !== 0 && year % 4 === 0  || year % 400 === 0)
-        console.log("True");
-    else console.log("False");
-}
+// function isLeapYear(year){
+    // if ( year % 100 !== 0 && year % 4 === 0  || year % 400 === 0)
+        // console.log("True");
+    // else console.log("False");
+// }
+
+// const isLeapYear = year => {if ( year % 100 !== 0 && year % 4 === 0  || year % 400 === 0)
+    // console.log("True");
+// else console.log("False");
+// }
+
+const isLeapYear = year => year % 100 !== 0 && year % 4 === 0  || year % 400 === 0;
+
 
 // Q7:
 // Define an arrow function named calculateAge that takes a birth year as a parameter and returns the age.
@@ -72,20 +80,28 @@ function calculateHypotenuse (sideOne,sideTwo) {
 
 // Q9:
 // Write a function named findGreaterNumber that takes two numbers as parameters and returns the greater of the two.
- function findGreaterNumber(){
-
+ function findGreaterNumber(num1, num2){
+   return Math.max(num1,num2);
  } 
 
 
 // Q10:
-// Define a function named calculateBMI that calculates the BMI (Body Mass Index) based on a person's weight (in kilograms) and height (in meters).
+// Define a function named calculateBMI that calculates the BMI (Body Mass Index) based on a 
+// person's weight (in kilograms) and height (in meters).
 
+function calculateBMI(weightKilograms , heightMeters){
+    return bmi = weightKilograms /(heightMeters * heightMeters);
+}
 
 
 // Q11:
-// Write a function called calculateSimpleInterest that calculates the simple interest based on the principal amount, interest rate, and time period.
+// Write a function called calculateSimpleInterest that calculates the simple interest based on the principal amount, 
+// interest rate, and time period.
 
-
+function calculateSimpleInterest( annualInterest , principalAmount, timeYear){
+    return principalAmount * annualInterest * timeYear;
+}
 
 // Q12:
-// Write a function named convertMinutesToHours that takes a number of minutes as input and returns the equivalent time in hours and minutes (e.g., "2 hours and 30 minutes").
+// Write a function named convertMinutesToHours that takes a number of minutes as input and returns
+//  the equivalent time in hours and minutes (e.g., "2 hours and 30 minutes").
